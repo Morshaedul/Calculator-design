@@ -10,117 +10,46 @@
 </head>
 <style>
     *{
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
-    h1{
-        text-align: center;
-        color: rgb(95, 84, 143);
+    .container{
+        display: grid;
+        grid-template-columns:  auto auto auto auto auto auto;
+
     }
-    .card{
-        margin: 20px auto;
-        max-width: 350px;
-        text-align: center;
-        margin-top: 10px;
+    .container > div{
+        background-color: yellow;
+        border: 1px solid black;
+        padding: 5px;
         
-        box-shadow: 0px 2px 20px rgb(187, 58, 187);
+    }
+    div{
+        height: 60px;
+    }
+    .div1{
+        grid-column: 1/7;
+    }
+    .div5{
+        grid-column: 1/7;
+    }
+    .div3{
+        grid-column: 2/6;
+    }
     
-    }
-    .card:hover{
-        box-shadow: 0px 2px 20px rgb(48, 9, 48);
-       
-    }
-    .card_head #result{
-        text-align: right;
-        padding: 2px;
-        letter-spacing: 2px;
-        font-weight: bold;
-        font-size: 25px;
-        height: 80px;
-        width: 100%;
-        box-sizing: border-box; 
-    }
-    .btn {
-    height: 80px;
-    width: 83px;
-    margin: 2px auto;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(247, 235, 235);
-    background-color: rgb(92, 85, 85);
-    padding: 5px;   
-}
-
-.btn:hover {
-    background-color: rgb(177, 35, 153);
-
-   
-}
-.right_side_btn_color{
-    background-color: rgb(167, 173, 77);
-}
-
+    
 </style>
 
 <body>
-   
-    <h1>CALCULATOR DESIGN</h1>
-        <div class="card">
-            <div class="card_head">
-                <input type="text" id="result" maxlength="12">
-            </div>
-            <div class="card_body">
-                <div>
-                    <input type="button" class="btn" value="C">
-                    <input type="button" class="btn" value="+/-">
-                    <input type="button" class="btn" value="%">
-                    <input type="button" class="btn right_side_btn_color" value="/">
-                    
-    
-                </div>
-                <div>
-                    <input type="button" class="btn" value="7">
-                    <input type="button" class="btn" value="8">
-                    <input type="button" class="btn" value="9">
-                    <input type="button" class="btn right_side_btn_color" value="x">
-    
-                </div>
-                <div>
-                    <input type="button" class="btn" value="4">
-                    <input type="button" class="btn" value="5">
-                    <input type="button" class="btn" value="6">
-                    <input type="button" class="btn right_side_btn_color" value="-">
-    
-                </div>
-                <div>
-                    <input type="button" class="btn" value="1">
-                    <input type="button" class="btn" value="2">
-                    <input type="button" class="btn" value="3">
-                    <input type="button" class="btn right_side_btn_color" value="+">
-    
-                </div>
-                <div>
-                    <input type="button" class="btn" value="0">
-                    <input type="button" class="btn" value=".">
-                    <input type="button" class="btn" value="DEL">
-                    <input type="button" class="btn right_side_btn_color" value="=">
-    
-                </div>
-                <h1>Copyright &copy; by MORSHAEDUL ALOM</h1>
-    
-               
-            </div>
-
-        </div>
-       
-        
-        
-   
-
-
+    <div class="container">
+        <div class="div1">Header </div>
+        <div class="div2">Menu</div>
+        <div class="div3">Main</div>
+        <div class="div4"> Aside </div>
+        <div class="div5">Footer</div>
+    </div>
   
-
-
+   
 
 </body>
 
